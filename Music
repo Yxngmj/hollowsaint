@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hollow Saint</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(10px);
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:silver;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+    url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:90px;
+    letter-spacing:8px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#cfcfcf;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    border:2px solid white;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:black;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    font-size:45px;
+    margin-bottom:30px;
+    font-weight:900;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.music-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#151515;
+    padding:30px;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.socials{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.socials a{
+    color:white;
+    text-decoration:none;
+    border:1px solid #444;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #222;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">HOLLOW SAINT</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#music">Music</a>
+<a href="#socials">Socials</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>HOLLOW SAINT</h1>
+<p>Built From Scars. Driven By Purpose.</p>
+<a href="#music" class="btn">Listen Now</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About</h2>
+
+<div class="about">
+<p>
+Hollow Saint is a Canadian hip-hop artist blending raw storytelling,
+ambition, pain, and growth into every track. The name represents
+the balance between struggle and purpose—the hollow spaces life
+creates and the strength needed to rise above them.
+</p>
+</div>
+</section>
+
+<section id="music">
+<h2 class="section-title">Music</h2>
+
+<div class="music-grid">
+
+<div class="card">
+<h3>BIG BANDS</h3>
+<p>Latest release. A statement record about ambition, sacrifice, and success.</p>
+</div>
+
+<div class="card">
+<h3>Upcoming Project</h3>
+<p>New music arriving soon.</p>
+</div>
+
+<div class="card">
+<h3>Live Performances</h3>
+<p>Booking opportunities and future shows coming soon.</p>
+</div>
+
+</div>
+</section>
+
+<section id="socials">
+<h2 class="section-title">Follow</h2>
+
+<div class="socials">
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+<a href="#">Spotify</a>
+<a href="#">YouTube</a>
+<a href="#">X</a>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+
+<p>Email: booking@hollowsaint.com</p>
+<p>Management & Business Inquiries</p>
+
+</section>
+
+<footer>
+© 2026 Hollow Saint. All Rights Reserved.
+</footer>
+
+</body>
+</html>
